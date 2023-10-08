@@ -13,7 +13,7 @@ int partition(int *arr,int l,int h){
     while(i<j){
         do{
             i++;
-        } while (i<=j && arr[i]<pivot);
+        } while (i<high && arr[i]<pivot);
         do{
             j--;
         } while (arr[j]>pivot);
